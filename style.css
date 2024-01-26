@@ -12,8 +12,9 @@ id1{
   img{
     margin-left: 160px; 
     padding-top: 7%;
-    height: 100px;
-    width: 100px;
+    width: 250px;
+    height: 150px;
+    text-align: center;
   }
 h3{
   text-align: center;
