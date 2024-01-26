@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnapChat Login</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Snapchat Login</title>
+ <style>
+    body {
+      background-color: #000000; /* Snapchat black background color */
+      background-image: url("bg.png"); /* Add subtle image */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Don't repeat the image */
+      background-size: cover; /* Cover the entire background */
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: rgb(0, 0, 0); /* Text color */
+    }
+
+    .snapchat-login {
+      width: 80%;
+      max-width: 350px;
+      background-color: #FFF; /* Snapchat white background color */
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 10px; /* Add rounded corners to the login box */
+    }
+
+    img {
+      width: 100%;
+      max-width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      text-align: center;
+      font-style: initial;
+    }
+
+    .c1 {
+      width: 100%;
+      height: 30px;
+      margin-top: 5px;
+      background-color: #ECECEC; /* Input field background color */
+      border: none;
+      outline: none;
+      padding: 10px 0.25px; /* Add equal left and right padding */
+      margin: 0 auto; /* Center the input field horizontally */
+      display: block; /* Make the input field a block-level element */
+    }
+
+    label {
+      display: block; /* Make labels block-level for proper spacing */
+      text-align: left; /* Align labels to the left */
+      margin-bottom: 5px; /* Add some bottom margin for better spacing */
+    }
+
+    .c2 {
+      padding-top: 20px;
+    }
+
+    span {
+      display: block; /* Make the span block-level for proper spacing */
+      margin: 10px auto; /* Add top and bottom margins and center the span horizontally */
+      padding: 0 10px; /* Add equal left and right padding */
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 200px; /* Increase max-width for better responsiveness */
+      height: 40px;
+      background-color: #FFFC00; /* Snapchat yellow background color */
+      border: none;
+      border-radius: 30px;
+      margin: 20px auto 0;
+      color: #000000; /* Button text color */
+    }
+
+    a {
+      color: #1CA0F2; /* Snapchat blue color for links */
+      text-decoration: none; /* Remove underline from links */
+    }
+
+    @media (max-width: 768px) {
+      .snapchat-login {
+        width: 95%;
+        max-width: none;
+      }
+    }
+ </style>
 </head>
 <body>
-  <div id="id1" class="snapchat-login">
-    <br><br><br>
-    <img src="logo.svg" class="img" alt="Snapchat Logo">
-    <h3>Login to SnapChat</h3>
-    <label for="username">Username or Email</label>
-    <input type="text" id="username" class="c1">
+ <div class="snapchat-login">
+  <br><br><br>
+    <img src="logo.svg" alt="Snapchat Logo">
+    <h3>Snapchat Login</h3>
+    <form>
+      <div class="c2">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="c1" required>
+      </div>
+      
+      <div class="c2">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="c1" required>
+      </div>
+      
+      <span>Forgot <a href="#">Password?</a></span><br><br><br>
+      <button id="login-button" class="btn" type="submit">Login</button>
+    </form>
+ </div>
+ <script>
+    const loginButton = document.getElementById('login-button');
 
-    <div class="c2">
-      <label for="password">Password</label>
-      <input type="password" id="password" class="c1">
-    </div>
-    
-    <span>Forgot <a href="#">Password?</a></span><br><br><br>
-    <button id="login-button" class="btn">Login</button>
-  </div>
+    loginButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      console.log('Button clicked!');
+    });
+ </script>
 </body>
-<script>
-  const loginButton = document.getElementById('login-button');
-
-loginButton.addEventListener('click', () => {
-  console.log('Button clicked!');
-});
-</script>
 </html>
