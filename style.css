@@ -21,7 +21,7 @@ h3{
   text-align: center;
   font-style: initial;
 }
-.c1{width:280px;
+#c1{width:280px;
   height: 30px; 
   margin-left: 30px; 
   margin-top: 5px;
@@ -33,7 +33,7 @@ label{
   padding-left: 30px
 }
 
-c2{
+#c2{
     padding-top: 20px;
   }
 
@@ -41,7 +41,7 @@ span{
   margin-left: 205px;
 }
 
-.btn{
+#btn{
   width: 100px;
   height: 40px;
   background-color: rgb(234,234,14);
@@ -50,7 +50,7 @@ span{
   margin-left: 120px;
 }
 
-.c5{
+#c5{
     margin-left: 200px;
   }
 a{
