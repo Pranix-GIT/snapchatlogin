@@ -20,7 +20,14 @@
     </div>
     
     <span>Forgot <a href="#">Password?</a></span><br><br><br>
-    <button class="btn">Login</button>
+    <button id="login-button" class="btn">Login</button>
   </div>
 </body>
+<script>
+  const loginButton = document.getElementById('login-button');
+
+loginButton.addEventListener('click', () => {
+  console.log('Button clicked!');
+});
+</script>
 </html>
