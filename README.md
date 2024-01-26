@@ -2,4 +2,4 @@
 by dnix
 
 # LInk to the site
-site: 
+site: https://pranix-git.github.io/snapchatlogin/
