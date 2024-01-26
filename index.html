@@ -111,18 +111,12 @@
         <label for="password">Password</label>
         <input type="password" id="password" class="c1" required>
       </div>
+      <div>
+        <button id="login-button" class="btn" type="submit">Login</button>
+      </div>
       
       <span>Forgot <a href="#">Password?</a></span><br><br><br>
-      <button id="login-button" class="btn" type="submit">Login</button>
     </form>
  </div>
- <script>
-    const loginButton = document.getElementById('login-button');
-
-    loginButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      console.log('Button clicked!');
-    });
- </script>
 </body>
 </html>
