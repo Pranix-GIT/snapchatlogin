@@ -1,6 +1,6 @@
 body {
   background-color: #000000; /* Snapchat black background color */
-  background-image: url("bg.png"); /* Add subtle image */
+  background-image: url("subtle-image.png"); /* Add subtle image */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Don't repeat the image */
   background-size: cover; /* Cover the entire background */
@@ -11,7 +11,6 @@ body {
   height: 100vh;
   margin: 0;
   color: rgb(0, 0, 0); /* Text color */
-
 }
 
 .snapchat-login {
@@ -43,8 +42,9 @@ h3 {
   background-color: #ECECEC; /* Input field background color */
   border: none;
   outline: none;
-  padding: 5px; /* Add some padding for better aesthetics */
-  margin-bottom: 10px; /* Increase bottom margin for better spacing */
+  padding: 10px 0.25px; /* Add equal left and right padding */
+  margin: 0 auto; /* Center the input field horizontally */
+  display: block; /* Make the input field a block-level element */
 }
 
 label {
@@ -59,9 +59,8 @@ label {
 
 span {
   display: block; /* Make the span block-level for proper spacing */
-  margin-top: 10px; /* Add top margin for better spacing */
-  display: block;
-  height: 2px;
+  margin: 10px auto; /* Add top and bottom margins and center the span horizontally */
+  padding: 0 10px; /* Add equal left and right padding */
 }
 
 .btn {
