@@ -33,22 +33,22 @@ label{
   padding-left: 30px
 }
 
-    c2{
-      padding-top: 20px;
-    }
-
-  span{
-    margin-left: 205px;
+c2{
+    padding-top: 20px;
   }
 
-  .btn{
-    width: 100px;
-    height: 40px;
-    background-color: rgb(234,234,14);
-    border: none;
-    border-radius: 30px;
-    margin-left: 120px;
-  }
+span{
+  margin-left: 205px;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(234,234,14);
+  border: none;
+  border-radius: 30px;
+  margin-left: 120px;
+}
 
 .c5{
     margin-left: 200px;
