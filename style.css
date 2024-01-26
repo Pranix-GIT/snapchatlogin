@@ -1,5 +1,9 @@
 body {
   background-color: #000000; /* Snapchat black background color */
+  background-image: url("bg.png"); /* Add subtle image */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  background-size: cover; /* Cover the entire background */
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
@@ -7,6 +11,7 @@ body {
   height: 100vh;
   margin: 0;
   color: rgb(0, 0, 0); /* Text color */
+
 }
 
 .snapchat-login {
