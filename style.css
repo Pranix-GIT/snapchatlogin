@@ -1,20 +1,22 @@
 body {
-  background-color: rgb(187, 187, 197);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #000000; /* Snapchat black background color */
+  font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  color: white; /* Text color */
 }
 
-.id1 {
+.snapchat-login {
   width: 80%;
   max-width: 350px;
-  background-color: white;
+  background-color: #FFF; /* Snapchat white background color */
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  border-radius: 10px; /* Add rounded corners to the login box */
 }
 
 img {
@@ -29,47 +31,50 @@ h3 {
   font-style: initial;
 }
 
-#c1 {
+.c1 {
   width: 100%;
   height: 30px;
   margin-top: 5px;
-  background-color: rgb(187, 187, 197);
+  background-color: #ECECEC; /* Input field background color */
   border: none;
-  outline: 0px;
+  outline: none;
+  padding: 5px; /* Add some padding for better aesthetics */
+  margin-bottom: 10px; /* Increase bottom margin for better spacing */
 }
 
 label {
-  padding-left: 0;
+  display: block; /* Make labels block-level for proper spacing */
+  text-align: left; /* Align labels to the left */
+  margin-bottom: 5px; /* Add some bottom margin for better spacing */
 }
 
-#c2 {
+.c2 {
   padding-top: 20px;
 }
 
 span {
-  margin-left: 0;
+  display: block; /* Make the span block-level for proper spacing */
+  margin-top: 10px; /* Add top margin for better spacing */
 }
 
-#btn {
+.btn {
   width: 100%;
-  max-width: 100px;
+  max-width: 200px; /* Increase max-width for better responsiveness */
   height: 40px;
-  background-color: rgb(234, 234, 14);
+  background-color: #FFFC00; /* Snapchat yellow background color */
   border: none;
   border-radius: 30px;
   margin: 20px auto 0;
-}
-
-#c5 {
-  margin-left: 0;
+  color: #000000; /* Button text color */
 }
 
 a {
-  color: black;
+  color: #1CA0F2; /* Snapchat blue color for links */
+  text-decoration: none; /* Remove underline from links */
 }
 
 @media (max-width: 768px) {
-  .id1 {
+  .snapchat-login {
     width: 90%;
     max-width: none;
   }
